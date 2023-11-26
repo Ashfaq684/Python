@@ -44,7 +44,7 @@ class GeniusComputerPlayer(Player):
             square = random.choice(game.available_moves()) # randomly choose one
         else:
             # get the square based off the minimax algorithm
-            square = random.choice(game.available_moves())
+            square = self.minimax(game, self.letter)['position']
         return square
 
     def minimax(self, state, player):
@@ -58,8 +58,7 @@ class GeniusComputerPlayer(Player):
             return {'position': None,
                     'score': 1 * (state.num_empty_squares() + 1) if other_player == max_player else -1 * (
                         state.num_empty_squares() + 1)
-                    }
-        
+                    }        
         elif not state.empty_squares():  # no empty squares
             return {'position': None, 'score': 0}
         
@@ -85,8 +84,8 @@ class GeniusComputerPlayer(Player):
             if player == max_player: # we are trying to maximize the max_player
                 if sim_score['score'] > best['score']:
                     best = sim_score # replace best
-                else:  # but minimize the other player
-                    if sim_score['score'] < best['score']:
-                        best = sim_score # replace best
+            else:  # but minimize the other player
+                if sim_score['score'] < best['score']:
+                    best = sim_score # replace best
             
         return best
