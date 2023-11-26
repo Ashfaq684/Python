@@ -56,7 +56,7 @@ class TicTacToe:
             diagonal1 = [self.board[i] for i in [0, 4, 8]]
             if all([spot == letter for spot in diagonal1]):
                 return True
-            diagonal2 = [self.board[i] for i in [0, 4, 8]]
+            diagonal2 = [self.board[i] for i in [2, 4, 6]]
             if all([spot == letter for spot in diagonal2]):
                 return True
         

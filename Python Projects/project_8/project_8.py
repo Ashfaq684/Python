@@ -1,7 +1,7 @@
 # Project name - Tic-Tac-Toe (AI)
 
 import time
-from player import HumanPlayer, RandomComputerPlayer
+from player import HumanPlayer, RandomComputerPlayer, GeniusComputerPlayer
 
 class TicTacToe:
     def __init__(self):
@@ -56,7 +56,7 @@ class TicTacToe:
             diagonal1 = [self.board[i] for i in [0, 4, 8]]
             if all([spot == letter for spot in diagonal1]):
                 return True
-            diagonal2 = [self.board[i] for i in [0, 4, 8]]
+            diagonal2 = [self.board[i] for i in [2, 4, 6]]
             if all([spot == letter for spot in diagonal2]):
                 return True
         
@@ -95,6 +95,6 @@ def play(game, x_player, o_player, print_game=True):
 
 if __name__ == '__main__':
     x_player = HumanPlayer('X')
-    o_player = RandomComputerPlayer('O')
+    o_player = GeniusComputerPlayer('O')
     t = TicTacToe()
     play(t, x_player, o_player, print_game=True)
