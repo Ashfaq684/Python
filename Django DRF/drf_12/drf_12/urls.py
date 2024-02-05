@@ -1,5 +1,5 @@
 """
-URL configuration for drf_11 project.
+URL configuration for drf_12 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -20,6 +20,6 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('studentapi/', views.student_api),    
-    path('studentapi/<int:pk>/', views.student_api),    
+    path('studentapi/', views.StudentAPI.as_view()),    
+    path('studentapi/<int:pk>/', views.StudentAPI.as_view()),    
 ]
