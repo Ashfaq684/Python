@@ -1,0 +1,29 @@
+env/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Scrapy
+.scrapy/
+
+# Logs
+*.log
+
+# Output files
+*.json
+*.jl
+*.csv
+
+# IDE specific files (e.g., VS Code)
+.vscode/
+
+# Scraped data directory
+/data/
+
+# Environment variables or sensitive information
+.env
+
+# Any local database files
+*.db
+*.sqlite
