@@ -27,3 +27,6 @@ __pycache__/
 # Any local database files
 *.db
 *.sqlite
+
+# key storage
+config.py
