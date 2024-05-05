@@ -30,3 +30,5 @@ __pycache__/
 
 # key storage
 config.py
+
+chromedriver.exe
