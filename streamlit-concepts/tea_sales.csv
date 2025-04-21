@@ -1,0 +1,13 @@
+Date,City,Tea_type,Cups_sold,Revenue
+2025-04-01,New York,Green Tea,120,300
+2025-04-01,Los Angeles,Black Tea,150,375
+2025-04-01,Chicago,Ginger Tea,90,270
+2025-04-02,New York,Masala Tea,130,390
+2025-04-02,Los Angeles,Green Tea,110,275
+2025-04-02,Chicago,Black Tea,160,400
+2025-04-03,New York,Ginger Tea,100,300
+2025-04-03,Los Angeles,Masala Tea,140,420
+2025-04-03,Chicago,Green Tea,95,237.5
+2025-04-04,New York,Black Tea,170,425
+2025-04-04,Los Angeles,Ginger Tea,105,315
+2025-04-04,Chicago,Masala Tea,115,345
